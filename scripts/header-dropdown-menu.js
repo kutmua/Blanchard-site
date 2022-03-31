@@ -14,7 +14,30 @@ document.addEventListener('DOMContentLoaded', function(){
     }
   }
 
+  // корректная реализация rotate еффекта для стрелок нижнего меню при клики
+  function delRotate(e) {
+    document.body.addEventListener('click', ()=> {
+      if (!e.classList.contains('is-active')){
+        e.classList.remove('rotate');
+      };
+    });
+  };
+
+  // функция разворота меню и стрелок
+  function rotateFunc() {
+    let headerMenuActiveEffect = document.querySelectorAll('.item__btn');
+
+    for (let btn of headerMenuActiveEffect) {
+      btn.addEventListener('click', ()=>{
+        btn.classList.add('rotate');
+        delRotate(btn);
+      });
+
+    };
+  };
+
   function setMenuListener() {
+    rotateFunc();
     document.body.addEventListener("click", (evt) => {
       const activeElements = document.querySelectorAll(`.${params.btnClassName}.${params.activeClassName}, .${params.dropClassName}.${params.activeClassName}`);
 
