@@ -1,7 +1,9 @@
 document.addEventListener('DOMContentLoaded', function(){
   const projectsSlider = new Swiper(".partners__container", {
-    slidesPerView: 1,
-    spaceBetween: 20,
+    slidesPerView: 3,
+    spaceBetween: 50,
+    slidesPerGroup: 2,
+
     grid: {
       rows: 1,
       fill: "row"
@@ -12,12 +14,27 @@ document.addEventListener('DOMContentLoaded', function(){
     },
 
     breakpoints: {
-      441: {
-        slidesPerView: 2,
-        spaceBetween: 30
+      200: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
       },
 
-      1200: {
+      700: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+      },
+
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 34
+      },
+
+      1024: {
+        slidesPerView: 2,
+        spaceBetween: 50
+      },
+
+      1500: {
         slidesPerView: 3,
         spaceBetween: 50
       }

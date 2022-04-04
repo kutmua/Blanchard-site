@@ -1,11 +1,13 @@
 document.addEventListener('DOMContentLoaded', function(){
   const gallerySlider = new Swiper(".gallery__swiper-container", {
-    slidesPerView: 1,
+    slidesPerView: 3,
+    slidesPerGroup: 2,
+    spaceBetween: 20,
     grid: {
       rows: 1,
       fill: "row"
     },
-    spaceBetween: 20,
+
     pagination: {
       el: ".gallery .swiper__counter",
       type: "fraction"
@@ -16,12 +18,22 @@ document.addEventListener('DOMContentLoaded', function(){
     },
 
     breakpoints: {
-      441: {
-        slidesPerView: 2,
-        spaceBetween: 30
+      200: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
       },
 
-      1200: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 38
+      },
+
+      1024: {
+        slidesPerView: 2,
+        spaceBetween: 34
+      },
+
+      1500: {
         slidesPerView: 3,
         spaceBetween: 50
       }

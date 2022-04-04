@@ -19,15 +19,21 @@
   <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
 
 </head>
 <body>
   <header class="header">
     <div class="header__top-menu p-l-r">
       <div class="container header__container flex">
+        <button class="header-top-menu--burger btn">
+          <span></span>
+        </button>
+
         <a class="header__logo-link" href="#">
           <img src="img/logo.svg" alt="" aria-label="Логотип Blanchard">
         </a>
+
         <nav class="header__nav">
           <ul class="nav__list list-reset flex">
             <li class="nav__item">
@@ -68,6 +74,25 @@
             Войти
           </span>
         </a>
+
+        <div class="header__btn-container--1024">
+          <button class="header__btn--1024 btn flex">
+            <svg class="btn__svg--1024" width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="9.15446" height="2.28862" transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.5813 21.0461)" fill="white"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1246 24.174C10.0376 24.174 5.32763 19.2725 5.32763 13.5103C5.32763 7.74817 10.0376 2.84669 16.1246 2.84669C22.2115 2.84669 26.9215 7.74817 26.9215 13.5103C26.9215 19.2725 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.872 2.79502 13.5103C2.79502 6.14863 8.76285 0.180786 16.1246 0.180786C23.4863 0.180786 29.4541 6.14863 29.4541 13.5103C29.4541 20.872 23.4863 26.8399 16.1246 26.8399Z" fill="white"/>
+            </svg>
+          </button>
+
+          <form class="header__search-container--1024" action="/">
+            <button class="header__search-btn--1024 btn">
+              <svg class="search-btn__svg--1024" width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="9.15446" height="2.28862" transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.5813 21.0461)" fill="white"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1246 24.174C10.0376 24.174 5.32763 19.2725 5.32763 13.5103C5.32763 7.74817 10.0376 2.84669 16.1246 2.84669C22.2115 2.84669 26.9215 7.74817 26.9215 13.5103C26.9215 19.2725 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.872 2.79502 13.5103C2.79502 6.14863 8.76285 0.180786 16.1246 0.180786C23.4863 0.180786 29.4541 6.14863 29.4541 13.5103C29.4541 20.872 23.4863 26.8399 16.1246 26.8399Z" fill="white"/>
+              </svg>
+            </button>
+            <input class="search__input--1024" type="text">
+          </form>
+        </div>
       </div>
     </div>
 
@@ -359,7 +384,7 @@
       <div class="p-l-r">
         <div class="gallery__container container flex">
           <div class="gallery__content flex">
-            <div>
+            <div class="gallery__content--top-wrapper">
               <h2 class="gallery__title title">
                 Галерея
               </h2>
@@ -373,7 +398,7 @@
 
             </div>
 
-            <div>
+            <div class="gallery__content--bottom-wrapper">
               <label class="check-box__form" tabindex="0">
                 <input class="checkbox" type="checkbox" name="periods">
                 <span></span>
@@ -417,49 +442,49 @@
               <div class="swiper-wrapper">
                 <a class="gallery__swiper-slide swiper-slide" href="">
                   <picture>
-                    <!-- <source srcset="" media="(max-width: 580px)">
-                    <source srcset="" media="(max-width: 960px)">
-                    <source srcset="img/gallery-img-1(1024).jpg" media="(max-width: 1360px)"> -->
+                    <source srcset="img/gallery-img-1(mobile).jpg" media="(max-width: 600px)">
+                    <source srcset="img/gallery-img-1(768).jpg" media="(max-width: 990px)">
+                    <source srcset="img/gallery-img-1(1024).jpg" media="(max-width: 1360px)">
                     <img class="slide__img" src="img/gallery-img-1Large.jpg" alt="Первое фото галереи">
                   </picture>
                 </a>
                 <a class="gallery__swiper-slide swiper-slide" href="">
                   <picture>
-                    <!-- <source srcset="" media="(max-width: 580px)">
-                    <source srcset="" media="(max-width: 960px)">
-                    <source srcset="img/gallery-img-2(1024).jpg" media="(max-width: 1360px)"> -->
+                    <source srcset="img/gallery-img-2(mobile).jpg" media="(max-width: 600px)">
+                    <source srcset="img/gallery-img-2(768).jpg" media="(max-width: 990px)">
+                    <source srcset="img/gallery-img-2(1024).jpg" media="(max-width: 1360px)">
                     <img class="slide__img" src="img/gallery-img-2Large.jpg" alt="Второе фото галереи">
                   </picture>
                 </a>
                 <a class="gallery__swiper-slide swiper-slide" href="">
                   <picture>
-                    <!-- <source srcset="" media="(max-width: 580px)">
-                    <source srcset="" media="(max-width: 960px)">
-                    <source srcset="img/gallery-img-3(1024).jpg" media="(max-width: 1360px)"> -->
+                    <source srcset="img/gallery-img-3(mobile).jpg" media="(max-width: 600px)">
+                    <source srcset="img/gallery-img-3(768).jpg" media="(max-width: 990px)">
+                    <source srcset="img/gallery-img-3(1024).jpg" media="(max-width: 1360px)">
                     <img class="slide__img" src="img/gallery-img-3Large.jpg" alt="Третье фото галереи">
                   </picture>
                 </a>
                 <a class="gallery__swiper-slide swiper-slide" href="">
                   <picture>
-                    <!-- <source srcset="" media="(max-width: 580px)">
-                    <source srcset="" media="(max-width: 960px)">
-                    <source srcset="img/gallery-img-4(1024).jpg" media="(max-width: 1360px)"> -->
+                    <source srcset="img/gallery-img-4(mobile).jpg" media="(max-width: 600px)">
+                    <source srcset="img/gallery-img-4(768).jpg" media="(max-width: 990px)">
+                    <source srcset="img/gallery-img-4(1024).jpg" media="(max-width: 1360px)">
                     <img class="slide__img" src="img/gallery-img-4Large.jpg" alt="Четвертое фото галереи">
                   </picture>
                 </a>
                 <a class="gallery__swiper-slide swiper-slide" href="">
                   <picture>
-                    <!-- <source srcset="" media="(max-width: 580px)">
-                    <source srcset="" media="(max-width: 960px)">
-                    <source srcset="img/gallery-img-5(1024).jpg" media="(max-width: 1360px)"> -->
+                    <source srcset="img/gallery-img-5(mobile).jpg" media="(max-width: 600px)">
+                    <source srcset="img/gallery-img-5(768).jpg" media="(max-width: 990px)">
+                    <source srcset="img/gallery-img-5(1024).jpg" media="(max-width: 1360px)">
                     <img class="slide__img" src="img/gallery-img-5Large.jpg" alt="Пятое фото галереи">
                   </picture>
                 </a>
                 <a class="gallery__swiper-slide swiper-slide" href="">
                   <picture>
-                    <!-- <source srcset="" media="(max-width: 580px)">
-                    <source srcset="" media="(max-width: 960px)">
-                    <source srcset="img/gallery-img-6(1024).jpg" media="(max-width: 1360px)"> -->
+                    <source srcset="img/gallery-img-6(mobile).jpg" media="(max-width: 600px)">
+                    <source srcset="img/gallery-img-6(768).jpg" media="(max-width: 990px)">
+                    <source srcset="img/gallery-img-6(1024).jpg" media="(max-width: 1360px)">
                     <img class="slide__img" src="img/gallery-img-6Large.jpg" alt="Шестое фото галереи">
                   </picture>
                 </a>
@@ -681,7 +706,7 @@
                 <li class="periods__list-item accordion__question ac js-enabled">
                   <button class="accordion__heading ac-trigger">
                     <span class="accordion__heading-text">
-                      <span class="accordion__heading-text-wrap">C 1500 по 1599 гг.</span>
+                      <span class="accordion__heading-text-wrap">C&nbsp;1500 по&nbsp;1599&nbsp;гг.</span>
                     </span>
                     <svg class="head-icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
@@ -693,7 +718,7 @@
                   </button>
 
                   <div class="accordion__content ac-panel">
-                    <div class="accordion__content-wrap">
+                    <div class="accordion__content-wrap accordion__content-wrap--none-info">
                       <div class="none-info__container flex">
                         <div class="none-info__picture flex">
                           <div>
@@ -712,7 +737,7 @@
                 <li class="periods__list-item accordion__question ac js-enabled">
                   <button class="accordion__heading ac-trigger">
                     <span class="accordion__heading-text">
-                      <span class="accordion__heading-text-wrap">C 1600 по 1699 гг.</span>
+                      <span class="accordion__heading-text-wrap">C&nbsp;1600 по&nbsp;1699&nbsp;гг.</span>
                     </span>
                     <svg class="head-icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
@@ -724,7 +749,7 @@
                   </button>
 
                   <div class="accordion__content ac-panel">
-                    <div class="accordion__content-wrap">
+                    <div class="accordion__content-wrap accordion__content-wrap--none-info">
                       <div class="none-info__container flex">
                         <div class="none-info__picture flex">
                           <div>
@@ -743,7 +768,7 @@
                 <li class="periods__list-item accordion__question ac js-enabled">
                   <button class="accordion__heading ac-trigger">
                     <span class="accordion__heading-text">
-                      <span class="accordion__heading-text-wrap">C 1600 по 1699 гг.</span>
+                      <span class="accordion__heading-text-wrap">C&nbsp;1700 по&nbsp;1799&nbsp;гг.</span>
                     </span>
                     <svg class="head-icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
@@ -755,7 +780,7 @@
                   </button>
 
                   <div class="accordion__content ac-panel">
-                    <div class="accordion__content-wrap">
+                    <div class="accordion__content-wrap accordion__content-wrap--none-info">
                       <div class="none-info__container flex">
                         <div class="none-info__picture flex">
                           <div>
@@ -774,7 +799,7 @@
                 <li class="periods__list-item accordion__question ac js-enabled">
                   <button class="accordion__heading ac-trigger">
                     <span class="accordion__heading-text">
-                      <span class="accordion__heading-text-wrap">C 1600 по 1699 гг.</span>
+                      <span class="accordion__heading-text-wrap">C&nbsp;1800 по&nbsp;1899&nbsp;гг.</span>
                     </span>
                     <svg class="head-icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
@@ -786,7 +811,7 @@
                   </button>
 
                   <div class="accordion__content ac-panel">
-                    <div class="accordion__content-wrap">
+                    <div class="accordion__content-wrap accordion__content-wrap--none-info">
                       <div class="none-info__container flex">
                         <div class="none-info__picture flex">
                           <div>
@@ -805,7 +830,7 @@
                 <li class="periods__list-item accordion__question ac js-enabled">
                   <button class="accordion__heading ac-trigger">
                     <span class="accordion__heading-text">
-                      <span class="accordion__heading-text-wrap">C 1600 по 1699 гг.</span>
+                      <span class="accordion__heading-text-wrap">C&nbsp;1900 по&nbsp;1999&nbsp;гг.</span>
                     </span>
                     <svg class="head-icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
@@ -817,7 +842,7 @@
                   </button>
 
                   <div class="accordion__content ac-panel">
-                    <div class="accordion__content-wrap">
+                    <div class="accordion__content-wrap accordion__content-wrap--none-info">
                       <div class="none-info__container flex">
                         <div class="none-info__picture flex">
                           <div>
@@ -836,7 +861,7 @@
                 <li class="periods__list-item accordion__question ac js-enabled">
                   <button class="accordion__heading ac-trigger">
                     <span class="accordion__heading-text">
-                      <span class="accordion__heading-text-wrap">C 1600 по 1699 гг.</span>
+                      <span class="accordion__heading-text-wrap">C&nbsp;2000 г.</span>
                     </span>
                     <svg class="head-icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
@@ -848,7 +873,7 @@
                   </button>
 
                   <div class="accordion__content ac-panel">
-                    <div class="accordion__content-wrap">
+                    <div class="accordion__content-wrap accordion__content-wrap--none-info">
                       <div class="none-info__container flex">
                         <div class="none-info__picture flex">
                           <div>
@@ -891,7 +916,7 @@
                         с&nbsp;20&nbsp;марта по&nbsp;30&nbsp;апреля
                       </p>
                     </div>
-                    <p class="title__event">Книжная гравюра в&nbsp;живом восприятии</p>
+                    <p class="title__event">Книжная гравюра в живом восприятии</p>
                     <p class="descr__event">Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и&nbsp;сын Ридольфо.</p>
                   </div>
                   <a class="link-details" href="#">
@@ -954,7 +979,7 @@
                         с&nbsp;8&nbsp;апреля по&nbsp;20&nbsp;мая
                       </p>
                     </div>
-                    <p class="title__event">Джон Винзор. Фотографии из&nbsp;серии &laquo;Метафора серебра&raquo;</p>
+                    <p class="title__event">Джон Винзор. Фотографии из серии &laquo;Метафора серебра&raquo;</p>
                     <p class="descr__event">Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и&nbsp;сын Ридольфо.</p>
                   </div>
                   <a class="link-details" href="#">
@@ -975,7 +1000,7 @@
                         с&nbsp;30&nbsp;марта по&nbsp;30&nbsp;апреля
                       </p>
                     </div>
-                    <p class="title__event">XXIV Международная биеннале молодого искусства</p>
+                    <p class="title__event">XXIV Международная биеннале&nbsp;молодого искусства</p>
                     <p class="descr__event">Внезапно, реплицированные с&nbsp;зарубежных источников, современные исследования.</p>
                   </div>
                   <a class="link-details" href="#">
@@ -1004,6 +1029,9 @@
                 <path d="M23.3333 16.6667L31.6667 25L23.3333 33.3333" stroke="black"/>
               </svg>
             </button>
+          </div>
+
+          <div class="swiper__events-pagination">
           </div>
         </div>
       </div>
@@ -1110,7 +1138,8 @@
               <div class="callback__phone-container callback__input-container">
                 <input class="callback__phone callback__input" name="Телефон" type="tel" placeholder="Телефон*" data-validate-field="phone">
               </div>
-              <button class="callback__btn btn" href="#">Заказать обратный звонок</button>
+              <button class="callback__btn btn">Заказать обратный звонок</button>
+              <button class="callback__btn callback__btn--mobile btn">Заказать</button>
             </form>
           </div>
 
@@ -1126,11 +1155,11 @@
           </div>
         </div>
       </div>
-      <div id="map" style="width: 100%; height: 700px; margin: 0 auto;"></div>
+      <div id="map" style="width: 100%; margin: 0 auto;"></div>
     </section>
 
     <footer class="footer">
-      <div class="p-l-r">
+      <div class="footer__main-container p-l-r flex">
         <div class="footer__container container flex">
           <img class="footer__logo" src="img/logo.svg" alt="Логотип">
           <ul class="footer__social-list list-reset flex">
@@ -1224,6 +1253,7 @@
       }),
       myMap.geoObjects.add(myPlacemark);
       myMap.behaviors.disable('scrollZoom');
+      myMap.behaviors.disable('drag');
     }
   </script>
 
