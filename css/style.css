@@ -71,6 +71,7 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -623,18 +624,10 @@ h4 {
   transform: translateX(-4px);
 }
 
-.header__btn-container--1024,
+.header-top--burger-menu,
+.header__search-btn--1024,
 .header__search-container--1024 {
   display: none;
-}
-
-.header__btn--1024 {
-  width: 30px;
-  height: 29px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-self: center;
 }
 
 /* hero */
@@ -1446,19 +1439,88 @@ h4 {
   color: var(--global-color-text);
 }
 
-.projects__descr-tooltips:focus:not(:active):not(:hover) .projects__descr-svg {
+.projects__descr-tooltips-container {
+  width: 16px;
+  height: 16px;
+  position: relative;
+}
+
+.projects__descr-tooltips {
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-btn);
+  display: none;
+  transition: opacity .3s linear;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #FFF;
+}
+
+.projects__descr-tooltips span {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  left: 45%;
+  border-width: 12px 9px 0 9px;
+  border-color: var(--color-btn) transparent transparent transparent;
+  border-style: solid;
+}
+
+.projects__descr-tooltips--first {
+  top: -440%;
+  left: -750%;
+  width: 264px;
+  height: 59px;
+}
+
+.projects__descr-tooltips--first span {
+  top: 93%;
+}
+
+.projects__descr-tooltips--second {
+  top: -530%;
+  left: -750%;
+  width: 264px;
+  height: 74px;
+}
+
+.projects__descr-tooltips--second span {
+  top: 94%;
+}
+
+.projects__descr-tooltips--third {
+  top: -330%;
+  left: -660%;
+  width: 232px;
+  height: 42px;
+}
+
+.projects__descr-tooltips--third span {
+  top: 90%;
+}
+
+.projects__descr-tooltips-container.tooltips-open .projects__descr-tooltips{
+  display: flex !important;
+}
+
+.projects__descr-tooltips-container:focus:not(:active):not(:hover) .projects__descr-svg {
   fill: var(--violet-ultra-light);
 }
 
-.projects__descr-tooltips:hover .projects__descr-svg  {
+.projects__descr-tooltips-container:hover .projects__descr-svg  {
   fill: var(--violet-ultra-light);
 }
 
-.projects__descr-tooltips:active .projects__descr-svg  {
+.projects__descr-tooltips-container:active .projects__descr-svg  {
   fill: var(--color-btn);
 }
 
-.projects__descr-tooltips:active .projects__descr-svg--pin  {
+.projects__descr-tooltips-container:active .projects__descr-svg--pin  {
   fill: #FFF;
 }
 
@@ -2136,7 +2198,6 @@ h4 {
 .accordion__painter-link.tab-active {
   color: var(--violet-dark);
 }
-
 
 .swiper-wrapper {
   height: unset;
