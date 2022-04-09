@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -82,14 +82,14 @@
             </div>
 
             <button class="burger-menu__log-in btn flex" aria-label="Кнопка Войти">
-              <div class="burger-menu-log-in-btn-content flex">
+              <span class="burger-menu-log-in-btn-content flex">
                 <svg class="log-in-btn-content--svg" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="white"/>
                 </svg>
                 <span class="log-in-btn-content--text">
                   Войти
                 </span>
-              </div>
+              </span>
             </button>
 
           </div>
@@ -177,9 +177,9 @@
         <ul class="bottom-menu__list flex list-reset" aria-label="Нижнее меню">
           <li class="bottom-menu__list-item btn">
             <button class="item__btn js-header-dropdown-btn btn focus-effect" data-path="one" aria-label="Кнопка реализм">
-              <p class="item__heading">
+              <span class="item__heading">
                 Реализм
-              </p>
+              </span>
             </button>
 
             <div class="dropdown__container js-header-drop" data-target="one">
@@ -228,9 +228,9 @@
 
           <li class="bottom-menu__list-item btn">
             <button class="item__btn js-header-dropdown-btn btn focus-effect" data-path="two" aria-label="Кнопка Импрессионизм">
-              <p class="item__heading">
+              <span class="item__heading">
                 Импрессионизм
-              </p>
+              </span>
             </button>
 
             <div class="dropdown__container js-header-drop" data-target="two">
@@ -278,9 +278,9 @@
 
           <li class="bottom-menu__list-item btn">
             <button class="item__btn js-header-dropdown-btn btn focus-effect" data-path="three" aria-label="Кнопка Постимпрессионизм">
-              <p class="item__heading">
+              <span class="item__heading">
                 Постимпрессионизм
-              </p>
+              </span>
             </button>
 
             <div class="dropdown__container js-header-drop" data-target="three">
@@ -328,9 +328,9 @@
 
           <li class="bottom-menu__list-item btn">
             <button class="item__btn js-header-dropdown-btn btn focus-effect" data-path="four" aria-label="Кнопка Авангард">
-              <p class="item__heading">
+              <span class="item__heading">
                 Авангард
-              </p>
+              </span>
             </button>
 
             <div class="dropdown__container js-header-drop" data-target="four">
@@ -371,9 +371,9 @@
 
           <li class="bottom-menu__list-item btn">
             <button class="item__btn js-header-dropdown-btn btn focus-effect" data-path="five" aria-label="Кнопка Футуризм">
-              <p class="item__heading">
+              <span class="item__heading">
                 Футуризм
-              </p>
+              </span>
             </button>
 
             <div class="dropdown__container js-header-drop" data-target="five">
@@ -516,7 +516,7 @@
 
             <div class="gallery__swiper-container swiper-container flex">
               <div class="swiper-wrapper">
-                <a class="gallery__swiper-slide swiper-slide" href="" aria-label="слайд первый">
+                <a class="gallery__swiper-slide swiper-slide" href="" aria-label="слайд первый" data-path="gallery-slide-one">
                   <picture>
                     <source srcset="img/gallery-img-1(mobile).jpg" media="(max-width: 600px)">
                     <source srcset="img/gallery-img-1(768).jpg" media="(max-width: 990px)">
@@ -524,7 +524,7 @@
                     <img class="slide__img" src="img/gallery-img-1Large.jpg" alt="Первое фото галереи">
                   </picture>
                 </a>
-                <a class="gallery__swiper-slide swiper-slide" href="" aria-label="слайд второй">
+                <a class="gallery__swiper-slide swiper-slide" href="" aria-label="слайд второй" data-path="gallery-slide-two">
                   <picture>
                     <source srcset="img/gallery-img-2(mobile).jpg" media="(max-width: 600px)">
                     <source srcset="img/gallery-img-2(768).jpg" media="(max-width: 990px)">
@@ -532,7 +532,7 @@
                     <img class="slide__img" src="img/gallery-img-2Large.jpg" alt="Второе фото галереи">
                   </picture>
                 </a>
-                <a class="gallery__swiper-slide swiper-slide" href="" aria-label="слайд третий">
+                <a class="gallery__swiper-slide swiper-slide" href="" aria-label="слайд третий" data-path="gallery-slide-three">
                   <picture>
                     <source srcset="img/gallery-img-3(mobile).jpg" media="(max-width: 600px)">
                     <source srcset="img/gallery-img-3(768).jpg" media="(max-width: 990px)">
@@ -540,7 +540,7 @@
                     <img class="slide__img" src="img/gallery-img-3Large.jpg" alt="Третье фото галереи">
                   </picture>
                 </a>
-                <a class="gallery__swiper-slide swiper-slide" href="" aria-label="слайд четвертый">
+                <a class="gallery__swiper-slide swiper-slide" href="" aria-label="слайд четвертый" data-path="gallery-slide-four">
                   <picture>
                     <source srcset="img/gallery-img-4(mobile).jpg" media="(max-width: 600px)">
                     <source srcset="img/gallery-img-4(768).jpg" media="(max-width: 990px)">
@@ -548,7 +548,7 @@
                     <img class="slide__img" src="img/gallery-img-4Large.jpg" alt="Четвертое фото галереи">
                   </picture>
                 </a>
-                <a class="gallery__swiper-slide swiper-slide" href="" aria-label="слайд пятый">
+                <a class="gallery__swiper-slide swiper-slide" href="" aria-label="слайд пятый" data-path="gallery-slide-five">
                   <picture>
                     <source srcset="img/gallery-img-5(mobile).jpg" media="(max-width: 600px)">
                     <source srcset="img/gallery-img-5(768).jpg" media="(max-width: 990px)">
@@ -556,7 +556,7 @@
                     <img class="slide__img" src="img/gallery-img-5Large.jpg" alt="Пятое фото галереи">
                   </picture>
                 </a>
-                <a class="gallery__swiper-slide swiper-slide" href="" aria-label="слайд шестой">
+                <a class="gallery__swiper-slide swiper-slide" href="" aria-label="слайд шестой" data-path="gallery-slide-six">
                   <picture>
                     <source srcset="img/gallery-img-6(mobile).jpg" media="(max-width: 600px)">
                     <source srcset="img/gallery-img-6(768).jpg" media="(max-width: 990px)">
@@ -565,6 +565,149 @@
                   </picture>
                 </a>
               </div>
+            </div>
+          </div>
+
+          <div class="modal__container">
+            <div class="modal__overlay flex">
+              <div class="modal__window modal__window--1 flex" data-target="gallery-slide-one">
+                <picture>
+                  <source srcset="img/gallery-img-1(mobile).jpg" media="(max-width: 600px)">
+                  <source srcset="img/gallery-img-1(768).jpg" media="(max-width: 990px)">
+                  <source srcset="img/gallery-img-1(1024).jpg" media="(max-width: 1360px)">
+                  <img class="modal__img" src="img/gallery-img-1Large.jpg" alt="Первое фото галереи">
+                </picture>
+
+                <div class="modal__content">
+                  <p class="modal__artist-name">Казимир Малевич</p>
+                  <p class="modal__picture-name">“Торс”</p>
+                  <p class="modal__picture-year">1879-1935</p>
+                  <p class="modal__picture-descr">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1879-1935 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+                </div>
+
+                <button class="modal-window__close-btn btn">
+                  <svg class="modal-window__close-btn--svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3044L15.3333 0.000153846L16 0.695801L1.33331 16L0.666641 15.3044Z" fill="black"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666695 -0.000125032L15.3334 15.3041L14.6667 15.9998L2.70967e-05 0.695522L0.666695 -0.000125032Z" fill="black"/>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="modal__window modal__window--2 flex" data-target="gallery-slide-two">
+                <picture>
+                  <source srcset="img/gallery-img-2(mobile).jpg" media="(max-width: 600px)">
+                  <source srcset="img/gallery-img-2(768).jpg" media="(max-width: 990px)">
+                  <source srcset="img/gallery-img-2(1024).jpg" media="(max-width: 1360px)">
+                  <img class="modal__img" src="img/gallery-img-2Large.jpg" alt="Второе фото галереи">
+                </picture>
+
+                <div class="modal__content">
+                  <p class="modal__artist-name">Казимир Малевич</p>
+                  <p class="modal__picture-name">“Женщина с граблями”</p>
+                  <p class="modal__picture-year">1931-1932</p>
+                  <p class="modal__picture-descr">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+                </div>
+
+                <button class="modal-window__close-btn btn">
+                  <svg class="modal-window__close-btn--svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3044L15.3333 0.000153846L16 0.695801L1.33331 16L0.666641 15.3044Z" fill="black"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666695 -0.000125032L15.3334 15.3041L14.6667 15.9998L2.70967e-05 0.695522L0.666695 -0.000125032Z" fill="black"/>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="modal__window modal__window--3 flex" data-target="gallery-slide-three">
+                <picture>
+                  <source srcset="img/gallery-img-3(mobile).jpg" media="(max-width: 600px)">
+                  <source srcset="img/gallery-img-3(768).jpg" media="(max-width: 990px)">
+                  <source srcset="img/gallery-img-3(1024).jpg" media="(max-width: 1360px)">
+                  <img class="modal__img" src="img/gallery-img-3Large.jpg" alt="Третье фото галереи">
+                </picture>
+
+                <div class="modal__content">
+                  <p class="modal__artist-name">Казимир Малевич</p>
+                  <p class="modal__picture-name">“Уборка ржи”</p>
+                  <p class="modal__picture-year">1879-1935</p>
+                  <p class="modal__picture-descr">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+                </div>
+
+                <button class="modal-window__close-btn btn">
+                  <svg class="modal-window__close-btn--svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3044L15.3333 0.000153846L16 0.695801L1.33331 16L0.666641 15.3044Z" fill="black"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666695 -0.000125032L15.3334 15.3041L14.6667 15.9998L2.70967e-05 0.695522L0.666695 -0.000125032Z" fill="black"/>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="modal__window modal__window--4 flex" data-target="gallery-slide-four">
+                <picture>
+                  <source srcset="img/gallery-img-4(mobile).jpg" media="(max-width: 600px)">
+                  <source srcset="img/gallery-img-4(768).jpg" media="(max-width: 990px)">
+                  <source srcset="img/gallery-img-4(1024).jpg" media="(max-width: 1360px)">
+                  <img class="modal__img" src="img/gallery-img-4Large.jpg" alt="Четвертое фото галереи">
+                </picture>
+
+                <div class="modal__content">
+                  <p class="modal__artist-name">Казимир Малевич</p>
+                  <p class="modal__picture-name">“Супрематическая композиция”</p>
+                  <p class="modal__picture-year">1916 г.</p>
+                  <p class="modal__picture-descr">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+                </div>
+
+                <button class="modal-window__close-btn btn">
+                  <svg class="modal-window__close-btn--svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3044L15.3333 0.000153846L16 0.695801L1.33331 16L0.666641 15.3044Z" fill="black"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666695 -0.000125032L15.3334 15.3041L14.6667 15.9998L2.70967e-05 0.695522L0.666695 -0.000125032Z" fill="black"/>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="modal__window modal__window--5 flex" data-target="gallery-slide-five">
+                <picture>
+                  <source srcset="img/gallery-img-5(mobile).jpg" media="(max-width: 600px)">
+                  <source srcset="img/gallery-img-5(768).jpg" media="(max-width: 990px)">
+                  <source srcset="img/gallery-img-5(1024).jpg" media="(max-width: 1360px)">
+                  <img class="modal__img" src="img/gallery-img-5Large.jpg" alt="Пятое фото галереи">
+                </picture>
+
+                <div class="modal__content">
+                  <p class="modal__artist-name">Казимир Малевич</p>
+                  <p class="modal__picture-name">“Женщина с ведрами”</p>
+                  <p class="modal__picture-year">1912-1913</p>
+                  <p class="modal__picture-descr">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+                </div>
+
+                <button class="modal-window__close-btn btn">
+                  <svg class="modal-window__close-btn--svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3044L15.3333 0.000153846L16 0.695801L1.33331 16L0.666641 15.3044Z" fill="black"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666695 -0.000125032L15.3334 15.3041L14.6667 15.9998L2.70967e-05 0.695522L0.666695 -0.000125032Z" fill="black"/>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="modal__window modal__window--6 flex" data-target="gallery-slide-six">
+                <picture>
+                  <source srcset="img/gallery-img-6(mobile).jpg" media="(max-width: 600px)">
+                  <source srcset="img/gallery-img-6(768).jpg" media="(max-width: 990px)">
+                  <source srcset="img/gallery-img-6(1024).jpg" media="(max-width: 1360px)">
+                  <img class="modal__img" src="img/gallery-img-6Large.jpg" alt="Шестое фото галереи">
+                </picture>
+
+                <div class="modal__content">
+                  <p class="modal__artist-name">Казимир Малевич</p>
+                  <p class="modal__picture-name">“Супрематическая композиция”</p>
+                  <p class="modal__picture-year">1931-1932</p>
+                  <p class="modal__picture-descr">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+                </div>
+
+                <button class="modal-window__close-btn btn">
+                  <svg class="modal-window__close-btn--svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3044L15.3333 0.000153846L16 0.695801L1.33331 16L0.666641 15.3044Z" fill="black"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666695 -0.000125032L15.3334 15.3041L14.6667 15.9998L2.70967e-05 0.695522L0.666695 -0.000125032Z" fill="black"/>
+                  </svg>
+                </button>
+              </div>
+
             </div>
           </div>
         </div>
@@ -1206,7 +1349,7 @@
           </div>
 
           <div class="callback__container">
-            <form class="callback__validate-form flex" action="">
+            <form class="callback__validate-form flex">
               <div class="callback__name-container callback__input-container">
                 <input class="callback__name callback__input" aria-label="введите имя" name="Имя" type="text" placeholder="Имя*" data-validate-field="name">
               </div>
@@ -1338,6 +1481,9 @@
 
   <!-- TOOLTIPS -->
   <script src="scripts/tooltips.js"></script>
+
+  <!-- MODAL WINDOW -->
+  <script src="scripts/modal.js"></script>
 
   <!-- MAIN JS -->
   <script src="scripts/main.js"></script>

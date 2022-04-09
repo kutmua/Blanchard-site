@@ -1,18 +1,19 @@
 document.addEventListener('DOMContentLoaded', function(){
   // функция открытия бургер меню
   function burgerMenuOpen(){
+    let body = document.querySelector('body');
     let burgerBtn = document.querySelector('.header-top-menu--burger');
     let burgerMenu = document.querySelector('.header-top--burger-menu');
     let burgerMenuClose = document.querySelector('.burger-menu__close-btn');
 
     burgerBtn.addEventListener('click', ()=>{
       burgerMenu.classList.add('burger-menu--is-open');
-      document.body.style.overflow = "hidden"
+      body.classList.add('overflow--lock');
     });
 
     burgerMenuClose.addEventListener('click', ()=> {
       burgerMenu.classList.remove('burger-menu--is-open');
-      document.body.style.overflow = "auto"
+      body.classList.remove('overflow--lock');
     });
   };
 

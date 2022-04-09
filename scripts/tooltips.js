@@ -27,9 +27,36 @@ document.addEventListener('DOMContentLoaded', function(){
       e.addEventListener('click', ()=>{
         e.classList.toggle('tooltips-open');
       });
-
     }
   };
+
+  // let tooltips = document.querySelectorAll('.projects__descr-tooltips-container');
+  // window.onclick = function(event){
+  //   if (event.target == tooltips) {
+  //     tooltips.classList.remove('tooltips-open');
+  //   }
+  // };
+
+  // let tooltips = document.querySelectorAll('.projects__descr-tooltips-container');
+
+  // for (let e of tooltips) {
+  //   e.addEventListener('click', ()=>{
+  //     e.classList.toggle('tooltips-open');
+  //   });
+  // }
+
+  // window.addEventListener('click',(e)=>{
+
+  //   if (e.target == document.body) {
+  //     console.log(e.target)
+  //     tooltips.forEach((el) =>{
+  //       el.classList.remove('tooltips-open');
+  //     });
+  //   }
+  // })
+
+
+
 
   tooltipsOn();
 });

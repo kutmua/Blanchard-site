@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function(){
   const gallerySlider = new Swiper(".gallery__swiper-container", {
     slidesPerView: 3,
-    slidesPerGroup: 2,
+    slidesPerGroup: 3,
     spaceBetween: 20,
     grid: {
       rows: 1,
@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
       1024: {
         slidesPerView: 2,
+        slidesPerGroup: 3,
         spaceBetween: 34
       },
 
