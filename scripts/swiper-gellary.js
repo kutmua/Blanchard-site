@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', function(){
       type: "fraction"
     },
     navigation: {
-      nextEl: ".btn__next",
-      prevEl: ".btn__previous"
+      nextEl: ".btn-next",
+      prevEl: ".btn-previous"
     },
 
     breakpoints: {

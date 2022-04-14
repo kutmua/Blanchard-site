@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function(){
   const btnsOpenModal = document.querySelectorAll('.gallery__swiper-slide');
   const modalOverlay = document.querySelector('.modal__overlay');
   const modalsWindow = document.querySelectorAll('.modal__window');
-  const btnCloseModal = document.querySelectorAll('.modal-window__close-btn');
+  const btnCloseModal = document.querySelectorAll('.modal__window-close-btn');
   let body = document.querySelector('body');
 
   // кнопка открытия модального окна

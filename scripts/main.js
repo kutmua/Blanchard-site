@@ -2,8 +2,8 @@ document.addEventListener('DOMContentLoaded', function(){
   // функция открытия бургер меню
   function burgerMenuOpen(){
     let body = document.querySelector('body');
-    let burgerBtn = document.querySelector('.header-top-menu--burger');
-    let burgerMenu = document.querySelector('.header-top--burger-menu');
+    let burgerBtn = document.querySelector('.header__burger-btn');
+    let burgerMenu = document.querySelector('.header__burger-menu');
     let burgerMenuClose = document.querySelector('.burger-menu__close-btn');
 
     burgerBtn.addEventListener('click', ()=>{
@@ -19,9 +19,9 @@ document.addEventListener('DOMContentLoaded', function(){
 
   // функция открытия поиска
   function searchOpen(){
-    let searchBtn = document.querySelector('.header__search-btn--1024');
-    let searchForm = document.querySelector('.header__search-container--1024');
-    let searchFormClose = document.querySelector('.header__search-form-btn-close--1024');
+    let searchBtn = document.querySelector('.header__search-btn-1024');
+    let searchForm = document.querySelector('.header__search-container-1024');
+    let searchFormClose = document.querySelector('.header__search-form-btn-close-1024');
 
     searchBtn.addEventListener('click', () =>{
       searchForm.classList.add('header__search--is-open');
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function(){
     anchor.addEventListener('click', function(event){
       event.preventDefault();
 
-      let burgerMenu = document.querySelector('.header-top--burger-menu');
+      let burgerMenu = document.querySelector('.header__burger-menu');
 
       if (burgerMenu.classList.contains('burger-menu--is-open')){
         burgerMenu.classList.remove('burger-menu--is-open');

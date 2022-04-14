@@ -5,13 +5,13 @@ document.addEventListener('DOMContentLoaded', function(){
     spaceBetween: 50,
 
     pagination: {
-      el: '.swiper__events-pagination',
+      el: '.swiper-events-pagination',
       clickable: true,
     },
 
     navigation: {
-      nextEl: '.events__btn--next',
-      prevEl: '.events__btn--prev',
+      nextEl: '.events__btn-next',
+      prevEl: '.events__btn-prev',
     },
 
    breakpoints: {
@@ -51,26 +51,5 @@ document.addEventListener('DOMContentLoaded', function(){
     watchSlidesProgress: true,
     watchSlidesVisibility: true,
     slideVisibleClass: "slide-visible",
-
-    on: {
-      init: function () {
-        this.slides.forEach((slide) => {
-          if (!slide.classList.contains("slide-visible")) {
-            slide.tabIndex = "-1";
-          } else {
-            slide.tabIndex = "";
-          }
-        });
-      },
-      slideChange: function () {
-        this.slides.forEach((slide) => {
-          if (!slide.classList.contains("slide-visible")) {
-            slide.tabIndex = "-1";
-          } else {
-            slide.tabIndex = "";
-          }
-        });
-      }
-    }
   });
 });
