@@ -1633,10 +1633,6 @@ h4 {
   transition: border-color .2s linear;
 }
 
-/* .partner:not(:last-child) {
-  margin-right: 50px;
-} */
-
 .partner:nth-last-child() {
   margin-right: 45px;
 }
@@ -1688,6 +1684,7 @@ h4 {
 }
 
 .location__name {
+  margin-bottom: 0px;
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
@@ -1746,7 +1743,6 @@ h4 {
   max-width: 329px;
   width: 100%;
   height: 50px;
-  /* padding: 10px 33px; */
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;
@@ -1825,6 +1821,7 @@ h4 {
 #map {
   height: 700px;
 }
+
 /* footer */
 .footer {
   background: #000;

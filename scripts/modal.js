@@ -14,8 +14,6 @@ document.addEventListener('DOMContentLoaded', function(){
         el.classList.remove('modal__window--visible');
       });
 
-      document.querySelector(`[data-target=${path}]`).classList.add('modal__window--visible');
-      modalOverlay.classList.add('modal__overlay--visible');
       body.classList.add('overflow--lock');
     });
   });

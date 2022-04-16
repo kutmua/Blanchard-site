@@ -485,9 +485,9 @@
               <p class="filters">Фильтр:</p>
 
               <select class="gallery-choices gallery__select" name="gallery-select" aria-label="выбрать фильтр">
-                <option value="Живопись" selected aria-label="фильтр Живопись">Живопись</option>
-                <option value="Рисунок" aria-label="фильтр Рисунок">Рисунок</option>
-                <option value="Скульптура" aria-label="фильтр Скульптура">Скульптура</option>
+                <option value="Живопись" selected>Живопись</option>
+                <option value="Рисунок">Рисунок</option>
+                <option value="Скульптура">Скульптура</option>
               </select>
 
             </div>
@@ -1347,7 +1347,7 @@
         <div class="map__container container flex">
 
           <div class="location">
-            <p class="location__name">Шоурум №4</p>
+            <h2 class="location__name">Шоурум №4</h2>
             <p class="location__descr">Леонтьевский переулок, дом 5/1</p>
           </div>
 
@@ -1456,8 +1456,8 @@
   </script>
 
   <!-- YANDEX MAPS SETTINGS -->
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=&lang=ru_RU" type="text/javascript"></script>
-  <script type="text/javascript">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=&lang=ru_RU"></script>
+  <script>
     ymaps.ready(init);
     function init(){
       var myMap = new ymaps.Map("map", {
