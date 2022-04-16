@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
   <title>Blanchard</title>
 
   <!-- CUSTOM SELECT -->
@@ -152,7 +152,7 @@
         </button>
 
         <div class="header__search-container-1024">
-          <form class="header__search-form-1024 flex" action="/">
+          <form class="header__search-form-1024 flex" action="#">
             <button class="header__search-form-btn-1024 search-form-btn-1024 btn">
               <svg class="search-form-btn-1024-svg" width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="9.15446" height="2.28862" transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.5813 21.0461)" fill="white"/>
@@ -455,7 +455,7 @@
             <p class="hero__descr">
               Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.
             </p>
-            <a class="hero__btn btn main-btn flex" type="button" href="#contact" aria-label="Кнопка подписаться на рассылку">Подписаться на&nbsp;рассылку</a>
+            <a class="hero__btn btn main-btn flex" href="#contact" aria-label="Кнопка подписаться на рассылку">Подписаться на&nbsp;рассылку</a>
           </div>
         </div>
       </div>
@@ -496,19 +496,19 @@
               <label class="check-box-form flex" aria-label="выбрать период">
                 <input class="checkbox" type="checkbox" name="periods">
                 <span></span>
-                <p>XIX век</p>
+                <span class="check-box-text">XIX век</span>
               </label>
 
               <label class="check-box-form flex" aria-label="выбрать период">
                 <input class="checkbox" type="checkbox" name="periods" checked>
                 <span></span>
-                <p>XX&nbsp;век</p>
+                <span class="check-box-text">XX&nbsp;век</span>
               </label>
 
               <label class="check-box-form flex" aria-label="выбрать период">
                 <input class="checkbox" type="checkbox" name="periods">
                 <span></span>
-                <p>Современность</p>
+                <span class="check-box-text">Современность</span>
               </label>
             </div>
           </div>
@@ -1352,7 +1352,7 @@
           </div>
 
           <div class="callback-container callback">
-            <form class="callback__validate-form flex">
+            <form class="callback__validate-form flex" action="#">
               <div class="callback__name-container callback__input-container">
                 <input class="callback__name callback__input" aria-label="введите имя" name="Имя" type="text" placeholder="Имя*" data-validate-field="name">
               </div>
@@ -1456,7 +1456,7 @@
   </script>
 
   <!-- YANDEX MAPS SETTINGS -->
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=&lang=ru_RU" type="text/javascript"></script>
   <script type="text/javascript">
     ymaps.ready(init);
     function init(){
@@ -1490,6 +1490,9 @@
   <!-- MODAL WINDOW -->
   <script src="scripts/modal.js"></script>
   <script src="scripts/graph-modal.min.js"></script>
+  <script>
+    const modal = new GraphModal();
+  </script>
 
   <!-- MAIN JS -->
   <script src="scripts/main.js"></script>

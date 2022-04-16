@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function(){
   // функция открытия бургер меню
   function burgerMenuOpen(){
     let body = document.querySelector('body');
+    let html = document.querySelector('html');
     let burgerBtn = document.querySelector('.header__burger-btn');
     let burgerMenu = document.querySelector('.header__burger-menu');
     let burgerMenuClose = document.querySelector('.burger-menu__close-btn');
@@ -9,11 +10,13 @@ document.addEventListener('DOMContentLoaded', function(){
     burgerBtn.addEventListener('click', ()=>{
       burgerMenu.classList.add('burger-menu--is-open');
       body.classList.add('overflow--lock');
+      html.classList.add('overflow--lock');
     });
 
     burgerMenuClose.addEventListener('click', ()=> {
       burgerMenu.classList.remove('burger-menu--is-open');
       body.classList.remove('overflow--lock');
+      html.classList.remove('overflow--lock');
     });
   };
 

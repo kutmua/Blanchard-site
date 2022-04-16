@@ -74,6 +74,10 @@ dd {
 }
 
 /* global */
+html, body {
+  overflow-x: hidden;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -81,10 +85,11 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
+  position: relative;
 }
 
 .overflow--lock {
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 a {
@@ -799,10 +804,6 @@ h4 {
   color: #fff;
 }
 
-.check-box-form p {
-  transition: color .2s linear;
-}
-
 .check-box-form:hover {
   color: var(--checkbox-color);
 }
@@ -811,13 +812,17 @@ h4 {
   border-color: var(--checkbox-color);
 }
 
+.check-box-text {
+  transition: color .2s linear;
+}
+
 .checkbox {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
 
-.checkbox:focus-visible + span + p {
+.checkbox:focus-visible + span + .check-box-text {
   color: #C283F3;
 }
 
@@ -857,7 +862,7 @@ h4 {
   border: 1px solid #C283F3;
 }
 
-.checkbox:checked + span + p{
+.checkbox:checked + span + .check-box-text{
   color: #C283F3;
 }
 
@@ -1364,6 +1369,8 @@ h4 {
 
 .events__card-img {
   width: 100%;
+  object-fit: cover;
+  object-position: top;
 }
 
 .events__card-info {

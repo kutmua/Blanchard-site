@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function(){
-  const modal = new GraphModal(); // инициализация библиотеки graph-modal.min.js
   const btnsOpenModal = document.querySelectorAll('.gallery__swiper-slide');
   const modalOverlay = document.querySelector('.modal__overlay');
   const modalsWindow = document.querySelectorAll('.modal__window');
@@ -18,6 +17,6 @@ document.addEventListener('DOMContentLoaded', function(){
       document.querySelector(`[data-target=${path}]`).classList.add('modal__window--visible');
       modalOverlay.classList.add('modal__overlay--visible');
       body.classList.add('overflow--lock');
-    })
-  })
+    });
+  });
 })
