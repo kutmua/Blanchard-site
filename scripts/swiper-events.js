@@ -10,8 +10,8 @@ document.addEventListener('DOMContentLoaded', function(){
     },
 
     navigation: {
-      nextEl: '.events__btn-next',
-      prevEl: '.events__btn-prev',
+      nextEl: '.events__btn-next-slide',
+      prevEl: '.events__btn-prev-slide',
     },
 
    breakpoints: {

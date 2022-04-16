@@ -1,62 +1,24 @@
 document.addEventListener('DOMContentLoaded', function(){
-  // tooltips
-  // let projectsText = document.querySelector('.projects__descr');
-  // let selectedTooltip;
+  tippy('.projects__descr-tooltip-one', {
+    theme: 'theme',
+    maxWidth: 300,
+    content: 'Пример современных тенденций - современная методология разработки',
+    duration: 0,
+    trigger: 'click',
+  });
 
-  // projectsText.onclick = function(event){
-  //   let tooltips = event.target.closest('.projects__descr-tooltips-container');
+  tippy('.projects__descr-tooltip-two', {
+    theme: 'theme',
+    maxWidth: 300,
+    content: 'Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции',
+    duration: 0,
+    trigger: 'click',
+  });
 
-  //   if (!tooltips) return;
-  //   if (!projectsText.contains(tooltips)) return;
-
-  //   tooltipsOn(tooltips);
-  // }
-
-  // function tooltipsOn(tp) {
-  //   if (selectedTooltip) { // убрать существующий тултип, если есть
-  //     selectedTooltip.classList.remove('tooltips-open');
-  //   }
-  //   selectedTooltip = tp;
-  //   selectedTooltip.classList.add('tooltips-open'); // вывести на экран новый тултип
-  // };
-
-  function tooltipsOn(){
-    let tooltips = document.querySelectorAll('.projects__descr-tooltips-container');
-
-    for (let e of tooltips) {
-      e.addEventListener('click', ()=>{
-        e.classList.toggle('tooltips-open');
-      });
-    }
-  };
-
-  // let tooltips = document.querySelectorAll('.projects__descr-tooltips-container');
-  // window.onclick = function(event){
-  //   if (event.target == tooltips) {
-  //     tooltips.classList.remove('tooltips-open');
-  //   }
-  // };
-
-  // let tooltips = document.querySelectorAll('.projects__descr-tooltips-container');
-
-  // for (let e of tooltips) {
-  //   e.addEventListener('click', ()=>{
-  //     e.classList.toggle('tooltips-open');
-  //   });
-  // }
-
-  // window.addEventListener('click',(e)=>{
-
-  //   if (e.target == document.body) {
-  //     console.log(e.target)
-  //     tooltips.forEach((el) =>{
-  //       el.classList.remove('tooltips-open');
-  //     });
-  //   }
-  // })
-
-
-
-
-  tooltipsOn();
+  tippy('.projects__descr-tooltip-three', {
+    theme: 'theme',
+    content: 'В стремлении повысить качество',
+    duration: 0,
+    trigger: 'click',
+  });
 });
