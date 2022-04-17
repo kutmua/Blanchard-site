@@ -44,10 +44,13 @@ document.addEventListener('DOMContentLoaded', function(){
       event.preventDefault();
 
       let burgerMenu = document.querySelector('.header__burger-menu');
+      let body = document.querySelector('body');
+      let html = document.querySelector('html');
 
       if (burgerMenu.classList.contains('burger-menu--is-open')){
         burgerMenu.classList.remove('burger-menu--is-open');
-        document.body.style.overflow = "auto";
+        body.classList.remove('overflow--lock');
+        html.classList.remove('overflow--lock');
       };
 
       const blockID = anchor.getAttribute('href');
