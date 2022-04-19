@@ -328,6 +328,10 @@
     margin-bottom: 8px;
   }
 
+  .events__card-descr {
+    padding: 0 2px 0 0;
+  }
+
   .events__btn-container {
     display: none;
   }
@@ -518,6 +522,10 @@
     order: -1;
   }
 
+  .accordion__inner-list {
+    column-count: 3;
+  }
+
   .artist-info {
     margin-right: 0;
     max-width: 668px;
@@ -536,7 +544,7 @@
   }
 
   .events__card-info {
-    padding: 11px 16px 50px 37px;
+    padding: 11px 20px 50px 37px;
   }
 
   .events__card-time {
@@ -545,6 +553,11 @@
 
   .events__card-title {
     margin-bottom: 6px;
+    padding: 0px 3px 0 0;
+  }
+
+  .events__card-descr {
+    padding: 0 2px 0 0;
   }
 
   /* projects */
@@ -953,6 +966,10 @@
 
   .events__card-time {
     margin-bottom: 9px;
+  }
+
+  .events__card-title {
+    padding: 0px 5px 0 0;
   }
 
   .link-details {
