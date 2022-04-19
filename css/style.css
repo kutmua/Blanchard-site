@@ -1372,7 +1372,7 @@ h4 {
 }
 
 .events__card-img {
-  width: 100%;
+  width: calc(100% + 1px);
   object-fit: cover;
   object-position: top;
 }
