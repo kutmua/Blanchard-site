@@ -9,7 +9,8 @@
 - Yandex maps API;
 - Popper js (for tooltips);
 - Graph-modal (for modal windows);
-- Input mask js (for validations form)
+- Input mask js (for validations form)  
+https://kutmua.github.io/Blanchard-website/
 ---
 
 ### Sections 'Hero' and header
